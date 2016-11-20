@@ -9,7 +9,7 @@ pub struct InstructionDecoder<'a> {
     start_offset: u16,
 }
 
-#[derive(Debug, Serialize)]
+#[derive(Debug, Serialize, Clone)]
 pub struct Instruction {
     pub offset: u16,
     mnemonic: String,

@@ -2,10 +2,12 @@ use super::CpuSnapshot;
 use serde::{Serialize, Serializer};
 
 // The web socket message sent from the debugger to the client
+#[derive(Clone)]
 pub enum DebuggerCommand {
     Break(BreakReason, CpuSnapshot),
 }
 
+#[derive(Clone)]
 pub enum BreakReason {
     Breakpoint,
     Step,
