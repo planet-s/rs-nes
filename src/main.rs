@@ -32,7 +32,7 @@ fn main() {
     cpu.reset();
 
     let mut window = Window::new_flags(
-        0, 0, SCREEN_WIDTH * 2, SCREEN_HEIGHT * 2, "RS-NES!", &[WindowFlag::Async]
+        -1, -1, SCREEN_WIDTH * 2, SCREEN_HEIGHT * 2, "RS-NES!", &[WindowFlag::Async]
     ).unwrap();
 
     window.set(Color::rgb(0, 0, 0));
