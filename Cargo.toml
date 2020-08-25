@@ -35,6 +35,5 @@ time = "*"
 
 [profile.release]
 opt-level = 3
-lto = true
 debug = true
 debug-assertions = false
